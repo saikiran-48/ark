@@ -27,7 +27,7 @@ const App: React.FC = () => {
     const fetchTransactions = async (searchQuery: string) => {
         setLoading(true);
         try {
-            const endpoint = 'https://arweave.net/graphql';
+            const endpoint = 'https://arweave-search.goldsky.com/graphql';
             const graphQLClient = new GraphQLClient(endpoint);
 
             const query = gql`
